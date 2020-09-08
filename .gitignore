@@ -1,0 +1,6 @@
+*.csv
+/bin
+/cmake-build-debug
+/cmake-build-release
+*.ods
+.idea/
