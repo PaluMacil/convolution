@@ -1,6 +1,6 @@
-//
-// Created by dan on 2020-09-07.
-//
+// Dan Wolf
+// CSVWriter.h
+
 #include <fstream>
 #include <vector>
 

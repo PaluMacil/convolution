@@ -1,6 +1,5 @@
-//
-// Created by dan on 2020-09-07.
-//
+// Dan Wolf
+// CSVWriter.cpp
 
 #include "CSVWriter.h"
 

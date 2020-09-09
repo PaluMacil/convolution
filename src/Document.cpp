@@ -1,6 +1,5 @@
-//
-// Created by dan on 2020-09-07.
-//
+// Dan Wolf
+// Document.cpp
 
 #include <set>
 #include <cctype>
@@ -71,11 +70,13 @@ std::vector<float> Document::Analyze(int windowSize) {
         // reset the word set for the next window
         uniqueWords.clear();
     }
+    std::set<std::string> globalUniqueWords(words.begin(), words.end());
+    auto total = float(globalUniqueWords.size()) / words.size();
     auto average = std::accumulate(scores.begin(), scores.end(), 0.0) / scores.size();
     auto min = *std::min_element(scores.begin(), scores.end());
     auto max = *std::max_element(scores.begin(), scores.end());
-    std::printf("complexity summary:\n\taverage: %.4f\tmin: %.4f\tmax: %.4f\n",
-                average, min, max);
+    std::printf("complexity summary:\ntotal: %.4f\taverage: %.4f\tmin: %.4f\tmax: %.4f\n",
+                total, average, min, max);
 
     return scores;
 }

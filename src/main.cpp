@@ -1,3 +1,6 @@
+// Dan Wolf
+// main.cpp
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
